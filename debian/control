@@ -1,4 +1,4 @@
-Source: libpathtools-perl
+Source: libfile-spec-perl
 Section: perl
 Priority: optional
 Build-Depends: debhelper (>= 7), perl
@@ -6,11 +6,11 @@ Maintainer: Nathaniel Nutter <nnutter@genome.wustl.edu>
 Standards-Version: 3.8.3
 Homepage: http://search.cpan.org/dist/PathTools/
 
-Package: libpathtools-perl
+Package: libfile-spec-perl
 Architecture: any
 Depends: ${perl:Depends}, ${shlibs:Depends}, ${misc:Depends}
-Description: unknown
- PathTools provides functions for determining the pathname of the current
+Description: File::Spec
+ File::Spec provides functions for determining the pathname of the current
  working directory. It is recommended that getcwd (or another *cwd() function)
  be used in all code to ensure portability.
  .

@@ -1,0 +1,20 @@
+Source: libpathtools-perl
+Section: perl
+Priority: optional
+Build-Depends: debhelper (>= 7), perl
+Maintainer: Nathaniel Nutter <nnutter@genome.wustl.edu>
+Standards-Version: 3.8.3
+Homepage: http://search.cpan.org/dist/PathTools/
+
+Package: libpathtools-perl
+Architecture: any
+Depends: ${perl:Depends}, ${shlibs:Depends}, ${misc:Depends}
+Description: unknown
+ PathTools provides functions for determining the pathname of the current
+ working directory. It is recommended that getcwd (or another *cwd() function)
+ be used in all code to ensure portability.
+ .
+ By default, it exports the functions cwd(), getcwd(), fastcwd(), and
+ fastgetcwd() (and, on Win32, getdcwd()) into the caller's namespace.
+ .
+ This description was automagically extracted from the module by dh-make-perl.
